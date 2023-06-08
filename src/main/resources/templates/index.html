@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+
+	<a
+		href="/login"
+		sec:authorize="!isAuthenticated()"
+	>LOGIN</a>
+	
+	<a
+		href="/user/pizze"
+		sec:authorize="isAuthenticated()"
+	>pizza</a>
+	
+	<a
+		href="/logout"
+		sec:authorize="isAuthenticated()"
+	>LOGOUT</a>
+	
+</body>
+</html>
